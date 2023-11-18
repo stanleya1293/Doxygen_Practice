@@ -1,0 +1,1 @@
+A simple showcase of doxygen using a premade Employee class with comments

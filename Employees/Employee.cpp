@@ -1,3 +1,12 @@
+/**
+ * @file Employee.cpp
+ * @author Arden Stanley
+ * @date 2023-11-17
+ * @brief implementations of the employee class
+ * 
+ * 
+ */
+
 #include "Employee.h"
 #include <iostream>
 

@@ -2,23 +2,36 @@
 \label{classOfficer}\index{Officer@{Officer}}
 
 
-Inheritance diagram for Officer\+:
-% FIG 0
+{\ttfamily \#include \char`\"{}Employees/\+Officer.\+h\char`\"{}}
 
 
-Collaboration diagram for Officer\+:
-% FIG 1
+
+Inheritance diagram for Officer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classOfficer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Officer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classOfficer__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}\label{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}} 
-void {\bfseries print} ()
+void \mbox{\hyperlink{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}{print}} ()
 \item 
-\mbox{\Hypertarget{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}\label{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}} 
-double {\bfseries calculate\+Pay} ()
+double \mbox{\hyperlink{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}{calculate\+Pay}} ()
 \item 
-\mbox{\Hypertarget{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}\label{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}} 
-{\bfseries Officer} (int ID, int years, double hourly\+Rate, float hours\+Worked, double evilness)
+\mbox{\hyperlink{classOfficer_a80ac1e36a3f36c3a7e12b5dc9320ad89}{Officer}} ()
+\item 
+\mbox{\hyperlink{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}{Officer}} (int ID, int years, double hourly\+Rate, float hours\+Worked, double evilness)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -29,7 +42,99 @@ double {\bfseries evilness}
 \doxysubsection*{Additional Inherited Members}
 
 
+\doxysubsection{Detailed Description}
+a child (class that inherits) class of \mbox{\hyperlink{classEmployee}{Employee}}, defines specified behaviors and attributes 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOfficer_a80ac1e36a3f36c3a7e12b5dc9320ad89}\label{classOfficer_a80ac1e36a3f36c3a7e12b5dc9320ad89}} 
+\index{Officer@{Officer}!Officer@{Officer}}
+\index{Officer@{Officer}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{Officer()}{Officer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Officer\+::\+Officer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor for \mbox{\hyperlink{classOfficer}{Officer}} class, initializes all variables to 0
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+all member variables initialized to 0 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}\label{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}} 
+\index{Officer@{Officer}!Officer@{Officer}}
+\index{Officer@{Officer}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{Officer()}{Officer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Officer\+::\+Officer (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{years,  }\item[{double}]{hourly\+Rate,  }\item[{float}]{hours\+Worked,  }\item[{double}]{evilness }\end{DoxyParamCaption})}
+
+constructor for initializing \mbox{\hyperlink{classOfficer}{Officer}} class to specified paramters
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ID \mbox{\hyperlink{classOfficer}{Officer}} ID \\
+\hline
+{\em int} & years years worked \\
+\hline
+{\em double} & hourly\+Rate the hourly rate of pay \\
+\hline
+{\em float} & hours\+Worked the hours worked \\
+\hline
+{\em double} & evilness the evilness of the officer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+initializes all member variables to user specified paramters 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}\label{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}} 
+\index{Officer@{Officer}!calculatePay@{calculatePay}}
+\index{calculatePay@{calculatePay}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{calculatePay()}{calculatePay()}}
+{\footnotesize\ttfamily double Officer\+::calculate\+Pay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+overrides calculate\+Pay function in \mbox{\hyperlink{classEmployee}{Employee}} class to calculate pay specific to officers
+
+\begin{DoxyPrecond}{Precondition}
+valid officer needed 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+double -\/ the pay 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classEmployee_a01c2c44e15434237db28832f6972e960}{Employee}}.
+
+\mbox{\Hypertarget{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}\label{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}} 
+\index{Officer@{Officer}!print@{print}}
+\index{print@{print}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Officer\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+overrides print function from \mbox{\hyperlink{classEmployee}{Employee}} class to print information for an officer
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+prints to terminal 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classEmployee_a79556ad700627dba88049f487a34a762}{Employee}}.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Officer.\+h\item 
-Officer.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{Officer_8h}{Officer.\+h}}\item 
+\mbox{\hyperlink{Officer_8cpp}{Officer.\+cpp}}\end{DoxyCompactItemize}

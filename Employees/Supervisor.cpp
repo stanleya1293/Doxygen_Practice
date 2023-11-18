@@ -1,3 +1,12 @@
+/**
+ * @file Supervisor.cpp
+ * @author Arden Stanley
+ * @date 2023-11-17
+ * @brief implementaions for the Supervisor class
+ * 
+ * 
+ */
+
 #include "Supervisor.h"
 #include <iostream>
 
